@@ -1,0 +1,56 @@
+.header
+    i(class="fa fa-exchange fa-lg toggle-sidebar")
+    .dropdown.notifications-container
+        i.fa.fa-bell.fa-lg.header-icon.toggle-not#notifications(data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+        .dropdown-menu(aria-labelledby='notifications')
+            .noti-head
+                | Notifications
+                span 50
+            .noti-content
+                ul.list-unstyled
+                    li
+                        i.fa.fa-envelope-o.fa-lg
+                        | you
+                    li
+                        i.fa.fa-money.fa-lg
+                        | you
+                    li
+                        i.fa.fa-thumbs-o-up.fa-lg
+                        | you     
+                    li
+                        i.fa.fa-envelope-o.fa-lg
+                        | yoou 
+                    li
+                        i.fa.fa-money.fa-lg
+                        | you                                                                                       
+            .noti-foot.text-center: a(href='#') View All Notifications
+    i.fa.fa-expand.fa.lg.toggle-fullscreen.header-icon
+    .dropdown.usermenu-container
+        .username#usermenu(data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+            img.avatar.rounded-circle(src='', alt='user avatar')
+            span.user Fayez
+            i.fa.fa-angle-down.fa-lg
+        .dropdown-menu.dropdown-menu-right(aria-labelledby='usermenu')
+          .user-info
+            h3 Fayez heshmat
+            p Premiun Member 
+          hr 
+          ul.activibities-list.list-unstyled
+            li Added Comment on Post "how to make"
+            li Added Comment on Post "how to make"
+            li Added Comment on Post "how to make"
+            li Added Comment on Post "how to make"
+          hr
+          .row.usermenuu-links 
+            .col-lg-4
+                .link-box
+                    i.fa.fa-gear.fa-lg.fa-fw
+                    span Settings
+            .col-lg-4
+                .link-box
+                    i.fa.fa-user.fa-lg.fa-fw
+                    span My profile
+            .col-lg-4
+                .link-box
+                    i.fa.fa-power-off.fa-lg.fa-fw
+                    span Logout

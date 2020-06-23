@@ -1,0 +1,36 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    &.caveat{
+        font-family: 'Caveat', cursive;
+    }
+    &.open{
+        font-family: 'Open Sans', sans-serif;
+    }
+    &.asap{
+        font-family: 'Asap', sans-serif;
+    }
+    &.slabo{
+        font-family: 'Slabo 27px', serif;
+    }
+}
+.page{
+    min-height: 100vh;
+    .content-area{
+        width: calc(100% - 250px);
+        min-height: 100vh;
+        transition: 0.3s;
+        float: right;
+        will-change: width;
+        background-color:#f2f1f6;
+        &.no-sidebar{
+            width: 100%;
+        }
+    }
+        h1{
+        color:#27ae50;
+        font-weight: bold;
+        }
+}

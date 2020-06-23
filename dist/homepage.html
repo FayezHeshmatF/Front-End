@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-initial-scale=1, shrink-to-fit=no"/>
+    <title>HomePage</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&amp;family=Open+Sans:ital,wght@0,300;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&amp;display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Asap:ital@1&amp;family=Caveat:wght@700&amp;family=Open+Sans:wght@300&amp;family=Slabo+27px&amp;display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="css/main.css"/>
+  </head>
+  <body>
+    <div class="page hom-page">
+      <div class="setting-box hide-settings"> 
+        <div class="toggle-setting"><i class="fa fa-gear fa-lg"></i></div>
+        <div class="setting-content text-center">
+          <div class="option-box colors-options">
+            <h4 class="option-title">Color Options</h4>
+            <ul class="list-unstyled">
+              <li data-theme="green-theme"></li>
+              <li data-theme="blue-theme"></li>
+              <li data-theme="red-theme"></li>
+              <li data-theme="orange-theme"></li>
+              <li data-theme="purple-theme"></li>
+            </ul>
+          </div>
+          <div class="option-box font-options">
+            <h4 class="option-title">Font Options</h4>
+            <select class="form-control">
+              <option value="open">open font</option>
+              <option value="caveat">caveat font</option>
+              <option value="asap">asap font</option>
+              <option value="slabo">slabo font</option>
+            </select>
+          </div>
+          <div class="option-box">
+            <h4 class="option-title">Sidebar Options</h4>
+          </div>
+        </div>
+      </div>
+      <div class="sidebar">
+        <div class="logo-area text-center">Fayez</div>
+        <ul class="links-area list-unstyled">
+          <li><a class="active" href="homepage.html">Homepage</a></li>
+          <li><a class="toggle-submenu" href="#">
+               Forms<i class="fa fa-angle-right"></i></a>
+            <ul class="child-links list-unstyled">
+              <li><a href="#">Input</a></li>
+              <li><a href="#">Textarea</a></li>
+              <li><a href="#">checkbox</a></li>
+              <li><a href="#">Radio</a></li>
+            </ul>
+          </li>
+          <li><a class="toggle-submenu" href="#">
+               Misc<i class="fa fa-angle-right"></i></a>
+            <ul class="child-links list-unstyled">
+              <li><a href="#">Loading</a></li>
+              <li><a href="#">BreadCrumbs</a></li>
+            </ul>
+          </li>
+          <li><a href="charts.html">Charts</a></li>
+        </ul>
+      </div>
+      <div class="content-area">
+        <div class="header"><i class="fa fa-exchange fa-lg toggle-sidebar"></i>
+          <div class="dropdown notifications-container"><i class="fa fa-bell fa-lg header-icon toggle-not" id="notifications" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i>
+            <div class="dropdown-menu" aria-labelledby="notifications">
+              <div class="noti-head">Notifications<span>50</span></div>
+              <div class="noti-content">
+                <ul class="list-unstyled">
+                  <li><i class="fa fa-envelope-o fa-lg"></i>you</li>
+                  <li><i class="fa fa-money fa-lg"></i>you</li>
+                  <li><i class="fa fa-thumbs-o-up fa-lg"></i>you     </li>
+                  <li><i class="fa fa-envelope-o fa-lg"></i>yoou </li>
+                  <li><i class="fa fa-money fa-lg"></i>you                                                                                       </li>
+                </ul>
+              </div>
+              <div class="noti-foot text-center"><a href="#">View All Notifications</a></div>
+            </div>
+          </div><i class="fa fa-expand fa lg toggle-fullscreen header-icon"></i>
+          <div class="dropdown usermenu-container">
+            <div class="username" id="usermenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img class="avatar rounded-circle" src="" alt="user avatar"/><span class="user">Fayez</span><i class="fa fa-angle-down fa-lg"></i></div>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="usermenu">
+              <div class="user-info">
+                <h3>Fayez heshmat</h3>
+                <p>Premiun Member </p>
+              </div>
+              <hr/>
+              <ul class="activibities-list list-unstyled">
+                <li>Added Comment on Post "how to make"</li>
+                <li>Added Comment on Post "how to make"</li>
+                <li>Added Comment on Post "how to make"</li>
+                <li>Added Comment on Post "how to make"</li>
+              </ul>
+              <hr/>
+              <div class="row usermenuu-links"> 
+                <div class="col-lg-4">
+                  <div class="link-box"><i class="fa fa-gear fa-lg fa-fw"></i><span>Settings</span></div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="link-box"><i class="fa fa-user fa-lg fa-fw"></i><span>My profile</span></div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="link-box"><i class="fa fa-power-off fa-lg fa-fw"></i><span>Logout</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container-fluid">
+          <div class="content">
+            <div class="page-head"></div>
+            <h1 class="page-title">HomePage</h1>
+            <p class="page-decription lead">This Is Description Of HomePage</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
