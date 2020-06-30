@@ -1,6 +1,11 @@
 $(function () {
   $(".toggle-sidebar").on("click", function () {
     $(".content-area, .sidebar").toggleClass("no-sidebar");
+    if($(this).find(".no-sidebar")){
+      $('.colorlib-project, .container').toggleClass("no-container");
+    }
+   
+
   });
   $(".toggle-submenu").on("click", function () {
     $(this).find(".fa-angle-right").toggleClass("down");
@@ -39,6 +44,12 @@ $(function () {
       .removeClass(fontClasses.join(" "))
       .addClass($(this).find("option:selected").val());
   });
+
+   $(".navbar .container .container-fluid ul li").on("click", function () {
+  //   //  $(this).addClass("active").siblings().removeClass("active");
+           $(this).siblings().removeClass("active").end();
+            $(this).addClass("active");
+   });
 });
 
 var elem = document.documentElement;

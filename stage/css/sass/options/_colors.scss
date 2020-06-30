@@ -1,31 +1,32 @@
 $themes: (
   grean-theme: (
-    color: #27ae50
+    color: #27ae50,
   ),
   blue-theme: (
-    color:#2980b9
+    color: #2980b9,
   ),
   red-theme: (
-    color: #c0392b
+    color: #c0392b,
   ),
-  orange-theme:(
-    color:#d35400
+  orange-theme: (
+    color: #d35400,
   ),
-  purple-theme:(
-    color:#8e44ad
-  )
+  purple-theme: (
+    color: #8e44ad,
+  ),
 );
 @each $theme, $map in $themes {
   .#{$theme} {
     $color: map-get($map, color);
-    .page .page-head .page-title{
+    .page .page-head .page-title {
       color: $color;
     }
-    .page h1{
+    .page h1 {
       color: $color;
     }
-    .header .usermenu-container .dropdown-menu .user-info h3{
+    .header .usermenu-container .dropdown-menu .user-info h3 {
       color: $color;
     }
   }
 }
+

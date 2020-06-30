@@ -1,0 +1,21 @@
+.navbar {
+  margin-bottom: 0;
+  border-radius: 0;
+  .container-fluid {
+    .navbar-header {
+      .navbar-brand {
+        font-size: 25px;
+        margin: 10px;
+      }
+    }
+    ul {
+      margin: 10px;
+      li {
+        font-size: 15px;
+      }
+      a:active{
+        color: #FFF;
+     }
+    }
+  }
+}

@@ -1,0 +1,67 @@
+- var pageTitle='Contact';
+html(lang="en")
+    head
+        include pug/layout/meta
+        include pug/layout/style
+    body
+        include pug/layout/navbar
+        .info
+           
+            .container
+                h2 Contact With Us
+                .row
+                    .fayez1.col-lg-4.text-center 
+                        a(href="#")
+                            i.fa.fa-envelope
+                            span| fayez01281030430@gmail.com
+                    .fayez2.col-lg-4.text-center 
+                            a(href="#")
+                                i.fa.fa-phone
+                                span| 01200103919
+                    .fayez3.col-lg-4.text-center 
+                            a(href="#")
+                                i.fa.fa-phone
+                                span| 01128490993
+                    
+        .form-contact
+            .container
+                .col-md-10.col-md-offset-1
+                    h2 Tell Us Wath You Fell
+                    form(action='#')
+                        .row.form-group
+                        .col-md-6
+                            // <label for="fname">First Name</label>
+                            input#fname.form-control(type='text', placeholder='Your firstname')
+                        .col-md-6
+                            // <label for="lname">Last Name</label>
+                            input#lname.form-control(type='text', placeholder='Your lastname')
+                        .row.form-group
+                        .col-md-12
+                            // <label for="email">Email</label>
+                            input#email.form-control(type='text', placeholder='Your email address')
+                        .row.form-group
+                        .col-md-12
+                            // <label for="subject">Subject</label>
+                            input#subject.form-control(type='text', placeholder='Your subject of this message')
+                        .row.form-group
+                        .col-md-12
+                            // <label for="message">Message</label>
+                            textarea#message.form-control(name='message', cols='30', rows='10', placeholder='Say something about us')
+                        .form-group
+                            input.btn.btn-primary.button(type='submit', value='Send Message')
+
+        .subscribe
+            .container
+                .row
+                    .col-md-8.col-md-offset-2.text-center.animate-box
+                        h2.text-center Keep In Touch
+                        p.text-center.lead Subscribe our and get latest update
+                    .col-md-6.col-md-offset-3
+                        form.form-inline.text-center
+                            .form-group
+                                input.email.form-control(type='text', placeholder='Enter your email')
+                            .form-group
+                                button.btn.btn-danger(type='submit') Subscribe Now
+
+        include pug/layout/footer
+        include pug/layout/script

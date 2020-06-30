@@ -19,3 +19,12 @@
                 li: a(href='#') Loading
                 li: a(href='#') BreadCrumbs
         li: a(href='charts.html' class= pageTitle === 'Charts'?'active' : '') Charts
+        li
+            a.toggle-submenu(href='#') 
+                | Others Pages
+                i.fa.fa-angle-right
+            ul.child-links.list-unstyled
+              li: a(href="about.html") About
+              li: a(href="#") Servses
+              li: a(href="#") Contact us
+              li: a( href="#") About Me 
